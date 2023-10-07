@@ -1,0 +1,75 @@
+ [
+        {
+            "id": 1,
+            "name": "Summer Festival Extravaganza",
+            "image": "https://i.ibb.co/gmZh2b1/premium-photo-1665203511885-40139d7543a8-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A.jpg",
+            "price": "$30 - $50",
+            "description": "Join us for a sizzling summer festival filled with music, food, and fun for all ages.",
+            "details": "Experience the magic of summer with live music performances, mouthwatering street food, and a lively carnival atmosphere. Don't miss out on this annual celebration of community and culture."
+          },
+          {
+            "id": 2,
+            "name": "Cultural Fusion Parade",
+            "image": "https://i.ibb.co/MnwhcGk/pawns-world-globe-with-blue-background-23-2149407876.jpg",
+            "price": "Free Admission",
+            "description": "Witness a mesmerizing parade showcasing the rich tapestry of cultures from around the world.",
+            "details": "Be part of the Cultural Fusion Parade, where diverse communities come together to celebrate their heritage. Enjoy colorful floats, traditional costumes, and vibrant music that will transport you to different corners of the globe."
+          },
+          {
+            "id": 3,
+            "name": "Carnival Delights",
+            "image": "https://i.ibb.co/DMXyX2N/photo-1613384895726-e3b2e43a964b-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
+            "price": "$25 - $40",
+            "description": "Step into a world of whimsy and wonder at Carnival Delights!",
+            "details": "Get ready for a day of family-friendly fun at Carnival Delights. From thrilling rides to classic carnival games and delicious cotton candy, this event has something for everyone. Join us in celebrating the joy of community and festivity."
+          },
+          {
+            "id": 4,
+            "name": "Charity Gala Night",
+            "image": "https://i.ibb.co/2Fwnh23/photo-1523580494863-6f3031224c94-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
+            "price": "$100 - $250",
+            "description": "Make a difference at the Charity Gala Night supporting noble causes.",
+            "details": "Join us for an elegant evening at the Charity Gala Night. Dress in your finest attire and enjoy a gourmet dinner, live entertainment, and a silent auction. Your presence helps make the world a better place, one charity at a time."
+          },
+          {
+            "id": 5,
+            "name": "Winter Wonderland Festival",
+            "image": "https://i.ibb.co/Z2HSr6f/photo-1609987052013-0f4e84e9ff5d-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
+            "price": "$20 - $45",
+            "description": "Embrace the enchantment of winter at the Winter Wonderland Festival.",
+            "details": "Step into a snowy paradise at the Winter Wonderland Festival. Experience ice skating, magical light displays, and cozy fireside gatherings. Warm up with hot cocoa and create unforgettable memories with loved ones."
+          },
+          {
+            "id": 6,
+            "name": "Harvest Festival",
+            "image": "https://i.ibb.co/zXnyq7S/PTI04-13-2023-000164-B-0-1681450571482-1681450571482-1681450692908-1681450692908.jpg?fbclid=IwAR2CqgWLyXWBFc-HUb7ETFZsgj6xIkp_Q3PlQqWSE8kPessvDR22z88V4ko",
+            "price": "Free Admission",
+            "description": "Celebrate the bountiful harvest season at our Harvest Festival.",
+            "details": "Join us for a day of farm-fresh produce, artisanal crafts, and autumnal festivities at the Harvest Festival and Farmers Market. Discover the flavors and traditions of the fall season with us."
+          },
+          {
+            "id": 7,
+            "name": "Spring Garden Party",
+            "image": "https://i.ibb.co/JHKdXhw/premium-photo-1661299216916-60a554a9942a-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A.jpg",
+            "price": "$35 - $55",
+            "description": "Welcome spring with our delightful garden party in full bloom.",
+            "details": "Experience the beauty of spring at our annual Spring Garden Party. Stroll through lush gardens, enjoy a tea tasting, and savor delectable pastries. It's a picturesque celebration of nature's renewal."
+          },
+          {
+            "id": 8,
+            "name": "Music in the Park",
+            "image": "https://i.ibb.co/MPhCBnG/photo-1532959640694-679ee8a20aa3-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
+            "price": "Free Admission",
+            "description": "Relax and unwind with live music in a scenic park setting.",
+            "details": "Join us for Music in the Park, where you can enjoy live performances by local musicians in a tranquil outdoor setting. Bring a picnic and your favorite blanket for a perfect evening under the stars."
+          },
+          {
+            "id": 9,
+            "name": "Music in the Park",
+            "image": "https://i.ibb.co/MPhCBnG/photo-1532959640694-679ee8a20aa3-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
+            "price": "Free Admission",
+            "description": "Relax and unwind with live music in a scenic park setting.",
+            "details": "Join us for Music in the Park, where you can enjoy live performances by local musicians in a tranquil outdoor setting. Bring a picnic and your favorite blanket for a perfect evening under the stars."
+          }
+    ]
+   
