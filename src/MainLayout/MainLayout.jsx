@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import Home from "../Pages/Home/Home";
-import Footer from "../Pages/Footer/Footer";
+import Footer from "../Components/Footer/Footer";
+
 
 
 const MainLayout = () => {
@@ -9,7 +9,7 @@ const MainLayout = () => {
         <div>
             <Navbar></Navbar>
             
-            <div className="min-h-screen  mx-auto">
+            <div className="min-h-screen mx-auto">
             <Outlet></Outlet>
             </div>
             <div>

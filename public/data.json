@@ -65,11 +65,11 @@
           },
           {
             "id": 9,
-            "name": "Music in the Park",
-            "image": "https://i.ibb.co/MPhCBnG/photo-1532959640694-679ee8a20aa3-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-            "price": "Free Admission",
-            "description": "Relax and unwind with live music in a scenic park setting.",
-            "details": "Join us for Music in the Park, where you can enjoy live performances by local musicians in a tranquil outdoor setting. Bring a picnic and your favorite blanket for a perfect evening under the stars."
+            "name": "Dance Around the World",
+            "image": "https://i.ibb.co/xX4MCwH/pexels-pixabay-209948.jpg",
+            "price": "$25 - $35",
+            "description": "Experience the beauty of global dance traditions at our event.",
+            "details": "Join us for a captivating journey of dance from around the world. Witness breathtaking performances showcasing diverse cultural dance forms. You can even participate in dance workshops and learn the steps yourself!"
           }
     ]
    

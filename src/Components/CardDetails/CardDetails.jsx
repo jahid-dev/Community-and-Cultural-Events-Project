@@ -9,7 +9,7 @@ const CardDetails = () => {
     const {id} = useParams()
     const dataFinding = data.find( dataFinding => dataFinding.id == id)
     console.log(dataFinding);
-    const { name, image, price, description, details } = dataFinding
+    const { name, image, price, details } = dataFinding
 
     const handleBtn = () =>{
         swal({

@@ -1,10 +1,9 @@
-import React from "react";
-import NewService1 from "../NewService1/NewService1";
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ singleData }) => {
   console.log(singleData);
-  const { id, name, image, price, description, details } = singleData;
+  const { id, name, image,  description } = singleData;
   return (
     <Link to={`/card/${id}`}>
     <div>
@@ -39,9 +38,6 @@ const ServiceCard = ({ singleData }) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
@@ -53,5 +49,9 @@ const ServiceCard = ({ singleData }) => {
     </Link>
   );
 };
+
+ServiceCard.propTypes = {
+  singleData: PropTypes.node
+}
 
 export default ServiceCard;
