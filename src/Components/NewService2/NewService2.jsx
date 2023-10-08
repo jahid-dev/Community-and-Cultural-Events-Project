@@ -1,18 +1,18 @@
-import React from 'react';
+
 
 const NewService2 = () => {
     return (
         <div>
             
-           <div className="grid  grid-cols-2 ">
+           <div className="lg:grid  flex flex-col-reverse lg:grid-cols-2 ">
             
-            <div className='mt-36'>
+            <div className='lg:mt-36 mt-2  lg:border-b-0'>
                 <p className="text-xl font-semibold">
-                Get ready to immerse yourself in a whirlwind of cultural delights! Our city is abuzz with excitement as the annual International Food and Music Festival kicks off this weekend, promising a tantalizing fusion of global flavors and toe-tapping beats.See you there!
+                Prepare to embark on an exhilarating journey through a kaleidoscope of cultural wonders! Our vibrant city is buzzing with anticipation as the highly-anticipated annual International Food and Music Festival bursts onto the scene this weekend, vowing to ignite your senses with an electrifying blend of world cuisines and irresistible rhythms. We can not wait to see you there!
                 </p>
             </div>
             <div className=''>
-                <img src="https://i.ibb.co/WDCgGj1/dance-2902034-1280.jpg?fbclid=IwAR2FOrWWHMykiEBReM2-VwTev1Y1dGus4Bd156R30zejDh2_l_ectU1hcmk" alt="" />
+                <img src="https://i.ibb.co/5YY8HDk/pexels-martin-lopez-2240765.jpg" alt="" />
             </div>
            </div>
         </div>

@@ -5,6 +5,7 @@ import NewService2 from "../../Components/NewService2/NewService2";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TotalCards from "../../Components/TotalCards/TotalCards";
+import Survey from "../../Components/Survey/Survey";
 
 const Home = () => {
     AOS.init();
@@ -16,6 +17,7 @@ const Home = () => {
             <TotalCards></TotalCards>
             <NewService1></NewService1>
             <NewService2></NewService2>
+            <Survey></Survey>
             
         </div>
     );

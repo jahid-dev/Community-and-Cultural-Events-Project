@@ -46,30 +46,7 @@
             "price": "Free Admission",
             "description": "Celebrate the bountiful harvest season at our Harvest Festival.",
             "details": "Join us for a day of farm-fresh produce, artisanal crafts, and autumnal festivities at the Harvest Festival and Farmers Market. Discover the flavors and traditions of the fall season with us."
-          },
-          {
-            "id": 7,
-            "name": "Spring Garden Party",
-            "image": "https://i.ibb.co/JHKdXhw/premium-photo-1661299216916-60a554a9942a-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A.jpg",
-            "price": "$35 - $55",
-            "description": "Welcome spring with our delightful garden party in full bloom.",
-            "details": "Experience the beauty of spring at our annual Spring Garden Party. Stroll through lush gardens, enjoy a tea tasting, and savor delectable pastries. It's a picturesque celebration of nature's renewal."
-          },
-          {
-            "id": 8,
-            "name": "Music in the Park",
-            "image": "https://i.ibb.co/MPhCBnG/photo-1532959640694-679ee8a20aa3-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-            "price": "Free Admission",
-            "description": "Relax and unwind with live music in a scenic park setting.",
-            "details": "Join us for Music in the Park, where you can enjoy live performances by local musicians in a tranquil outdoor setting. Bring a picnic and your favorite blanket for a perfect evening under the stars."
-          },
-          {
-            "id": 9,
-            "name": "Dance Around the World",
-            "image": "https://i.ibb.co/xX4MCwH/pexels-pixabay-209948.jpg",
-            "price": "$25 - $35",
-            "description": "Experience the beauty of global dance traditions at our event.",
-            "details": "Join us for a captivating journey of dance from around the world. Witness breathtaking performances showcasing diverse cultural dance forms. You can even participate in dance workshops and learn the steps yourself!"
           }
+         
     ]
    

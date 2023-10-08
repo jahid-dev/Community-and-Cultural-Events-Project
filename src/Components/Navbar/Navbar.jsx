@@ -18,7 +18,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "border-4  border-blue-600" : ""
+            isPending ? "pending" : isActive ? "border-4 rounded-lg  border-[#3ce7ae]" : ""
           }
         >
           Home
@@ -26,7 +26,7 @@ const Navbar = () => {
         <NavLink
           to="/login"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "border-4 border-blue-600" : ""
+            isPending ? "pending" : isActive ? "border-4 rounded-lg  border-[#3ce7ae]" : ""
           }
         >
           Login
@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink
           to="register"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "border-4 border-blue-600" : ""
+            isPending ? "pending" : isActive ? "border-4 rounded-lg  border-[#3ce7ae]" : ""
           }
         >
           Register
@@ -42,10 +42,18 @@ const Navbar = () => {
         <NavLink
           to="/blog"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "border-4  border-blue-600" : ""
+            isPending ? "pending" : isActive ? "border-4 rounded-lg  border-[#3ce7ae]" : ""
           }
         >
           Blog
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "border-4 rounded-lg  border-[#3ce7ae]" : ""
+          }
+        >
+          Contact US
         </NavLink>
       </div>
       <div className="mt-2">
