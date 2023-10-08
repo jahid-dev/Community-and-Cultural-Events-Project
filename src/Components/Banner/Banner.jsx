@@ -1,7 +1,11 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../firebase/Provider/AuthProvider';
 const Banner = () => {
   AOS.init();
+
+  const {user} = useContext(AuthContext)
   return (
     <div 
       className="hero min-h-screen"

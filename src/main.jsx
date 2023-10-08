@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './MainRouter/MainRouter'
-
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AuthProvider from './firebase/Provider/AuthProvider'
 

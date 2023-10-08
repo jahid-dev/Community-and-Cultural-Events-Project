@@ -1,6 +1,8 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../firebase/Provider/AuthProvider";
+import toast from "react-hot-toast";
+
 
 
 
@@ -9,6 +11,8 @@ const Login = () => {
     const {signInUser, signInWithGoogle} = useContext(AuthContext);
 
     const navigate = useNavigate();
+    const location = useLocation()
+    console.log("login page location", location);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -19,8 +23,9 @@ const Login = () => {
         signInUser(email, password)
         .then(result => {
             console.log(result.user)
+            navigate(location?.state? location.state : '/' )
             e.target.reset()
-            navigate('/')
+            
         })
         .catch(error  => {
             console.error(error)
@@ -31,6 +36,8 @@ const Login = () => {
         signInWithGoogle()
         .then(result => {
             console.log(result.user);
+            toast.success("Login success")
+            navigate(location?.state? location.state : '/' )
         })
         .catch(error => {
             console.error(error);
@@ -62,7 +69,7 @@ const Login = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
+                            <div  className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </form>
