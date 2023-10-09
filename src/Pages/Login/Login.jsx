@@ -2,12 +2,14 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../firebase/Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
     const { signInUser, signInWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     const [error, setError] = useState(null); // State to hold the error message
+    
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -17,19 +19,12 @@ const Login = () => {
         try {
             const result = await signInUser(email, password);
             console.log(result.user);
+            toast.success("Login success");
             navigate(location?.state ? location.state : "/");
             e.target.reset();
         } catch (error) {
-            console.log(error); // Add this line for debugging
             console.error(error);
-
-            if (error.code === "auth/wrong-password") {
-                setError("Password doesn't match.");
-            } else if (error.code === "auth/user-not-found") {
-                setError("Email doesn't match.");
-            } else {
-                setError(error.message);
-            }
+            setError(error.message)
         }
     };
 
@@ -88,17 +83,23 @@ const Login = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </form>
-                        <p>
-                            New here? Please{" "}
+                        <p className="text-center">
+                            Welcome to our community! 🚀 Curious about what we offer?{" "}
                             <Link to="/register">
-                                <button className="btn btn-link">Register</button>
+                                <button className="btn btn-link text-blue-500 hover:underline">
+                                    Discover More & Register
+                                </button>
                             </Link>
                         </p>
-                        <p>
-                            <button onClick={handleGoogleSignIn} className="btn btn-ghost">
-                                Google
-                            </button>
+                        <p className="text-center">
+                            <span className="text-gray-600">Looking for a quick way to sign in?</span>
                         </p>
+                        <div className="flex justify-center items-center mt-4">
+                            <button onClick={handleGoogleSignIn} className="btn btn-ghost">
+                                <FcGoogle className="mr-2" /> Sign in with Google
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -107,3 +108,4 @@ const Login = () => {
 };
 
 export default Login;
+

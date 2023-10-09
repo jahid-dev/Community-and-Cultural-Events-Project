@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const { createUser,setUser } = useContext(AuthContext);
+  const { createUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate()
 
   const handleRegister = (e) => {
@@ -29,7 +29,7 @@ const Register = () => {
 
     //create user in firebase
     createUser(email, password)
-    .then((userCredential) => {
+      .then((userCredential) => {
         // User created successfully
         const user = userCredential.user;
 
@@ -43,8 +43,8 @@ const Register = () => {
             setUser((prevUser) => {
               prevUser.displayName = name;
               prevUser.photoURL = photoURL;
-              return {...prevUser};
-              })
+              return { ...prevUser };
+            })
             navigate("/");
           })
           .catch((error) => {
@@ -122,12 +122,17 @@ const Register = () => {
                 <button className="btn btn-primary">Register</button>
               </div>
             </form>
-            <p>
-              Already have account? Please{" "}
-              <Link to="/login">
-                <button className="btn btn-link">Login</button>
-              </Link>
+            <p className="text-center text-gray-600">
+              Already part of our community? Welcome back!
             </p>
+            <div className="flex justify-center items-center mt-4">
+              <Link to="/login">
+                <button className="btn btn-link">
+                  Login Now
+                </button>
+              </Link>
+            </div>
+
           </div>
         </div>
       </div>

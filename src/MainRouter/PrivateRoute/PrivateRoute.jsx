@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useContext } from "react";
 import { AuthContext } from "../../firebase/Provider/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
@@ -9,7 +10,7 @@ const PrivateRoute = ({children}) => {
 
 
     if(loading){
-        return <h2 className="text-7xl text-center min-h-screen font-bold">Loading</h2>
+        return <h2 className="text-7xl text-center min-h-screen font-bold">Loading.....</h2>
     }
 
     if(user){
@@ -18,5 +19,9 @@ const PrivateRoute = ({children}) => {
 
     return <Navigate state={location.pathname} to='/login'></Navigate>
 };
+
+PrivateRoute.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
 
 export default PrivateRoute;
