@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser,setUser } = useContext(AuthContext);
   const navigate = useNavigate()
 
   const handleRegister = (e) => {
@@ -13,6 +13,7 @@ const Register = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const photoURL = e.target.photo.value;
     console.log(name, email, password);
 
     if (password.length < 6) {
@@ -28,15 +29,6 @@ const Register = () => {
 
     //create user in firebase
     createUser(email, password)
-    //   .then((result) => {
-    //     console.log(result.user);
-    //     toast.success("Register success")
-    //     navigate('/')
-    //   })
-    //   .catch((error) => {
-    //     toast.error(error.message)
-    //     console.error(error);
-    //   });
     .then((userCredential) => {
         // User created successfully
         const user = userCredential.user;
@@ -44,10 +36,15 @@ const Register = () => {
         // Set the user's display name
         updateProfile(user, {
           displayName: name,
+          photoURL: photoURL,
         })
           .then(() => {
             toast.success("Register success")
-
+            setUser((prevUser) => {
+              prevUser.displayName = name;
+              prevUser.photoURL = photoURL;
+              return {...prevUser};
+              })
             navigate("/");
           })
           .catch((error) => {
@@ -76,6 +73,18 @@ const Register = () => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
+                  required
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="text"
+                  name="photo"
+                  placeholder="Please provide a valid photo link"
                   required
                   className="input input-bordered"
                 />

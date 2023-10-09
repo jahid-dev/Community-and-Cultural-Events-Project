@@ -59,11 +59,13 @@ const Navbar = () => {
       <div className="mt-2">
         {user ? (
           <>
-            <img
-              className="rounded-full w-10  lg:mb-2 ml-36"
-              src={user.photoURL}
-              alt=""
-            />
+            {user.photoURL ? (
+              <img
+                className="rounded-full w-10 lg:mb-2 ml-36"
+                src={user.photoURL}
+                alt="User"
+              />
+            ) : null}
             <div className="flex flex-col">
               <span className="font-semibold font-serif mr-5 lg:mr-10">
                 User Name: {user.displayName}
@@ -72,7 +74,6 @@ const Navbar = () => {
                 User Email: {user.email}
               </span>
             </div>
-
             <a onClick={handleLogOut} className="btn btn-sm">
               Sign Out
             </a>
